@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const useBookData = ({selectFilter}) => {
-  const [orderBook, setOrderBook] = useState<{ bids: any; asks: any }>({
+  const [orderBook, setOrderBook] = useState({
     bids: [],
     asks: [],
   });
@@ -21,7 +21,7 @@ const useBookData = ({selectFilter}) => {
       );
     };
     ws.onmessage = (event) => {
-      const response = JSON.parse(event.data as string);
+      const response = JSON.parse(event.data);
       if (Array.isArray(response)) {
         const [_, data] = response;
         const [price, count, amount] = data;
@@ -52,14 +52,14 @@ const useBookData = ({selectFilter}) => {
         } else {
           setOrderBook((prevOrderBook) => {
             const updatedBids = prevOrderBook.bids.filter(
-              (bid: any) => bid.price !== price
+              (bid) => bid.price !== price
             );
             const updatedAsks = prevOrderBook.asks.filter(
-              (ask: any) => ask.price !== price
+              (ask) => ask.price !== price
             );
             return {
               bids: updatedBids,
-              asks: updatedAsks.sort((a: any, b: any) => b - a),
+              asks: updatedAsks.sort((a, b) => b - a),
             };
           });
         }

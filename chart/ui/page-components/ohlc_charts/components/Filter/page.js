@@ -15,7 +15,7 @@ const Filter = ({ filter, setFilter }) => {
         {control.map((item) => {
             // eslint-disable-next-line react/jsx-key
             return <div role='presentation' 
-                onClick={() => { setFilter((prev: any) => 
+                onClick={() => { setFilter((prev) => 
                 ({ ...prev, 'time': item.value })) }} 
                 className={`${styles.button} 
                 ${item.value === filter.time && styles.active}`} >{item.title}</div>
