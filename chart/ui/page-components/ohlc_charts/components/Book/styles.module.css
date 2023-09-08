@@ -1,0 +1,56 @@
+.head{
+    display: flex;
+}
+.cantiner{
+    background-color: #172d3e;
+    width: 45%;
+    margin: auto;
+
+   
+}
+.value{
+    margin: 2px 20px;
+    width: 30px;
+    font-size: 11px;
+    opacity: 1.2;
+    
+}
+.title{
+    display: inline-flex;
+    color: #8b969f;
+    font-size: 11px;
+}
+
+.header{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 4px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.ti{
+    color:#8b969f;
+}
+
+.card{
+    display: flex;
+}
+.postiveColor{
+    background-color: rgba(3,202,155,0.4); 
+    height: 16px;
+    position: absolute;
+    right: 0px;
+   
+}
+.body{
+    position: relative;
+}
+.negativeColor{
+    background-color: #e44b44;
+    height: 16px;
+    position: absolute;
+    left: 0px;
+    opacity: 00.3;
+}

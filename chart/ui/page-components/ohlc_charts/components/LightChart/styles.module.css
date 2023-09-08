@@ -1,0 +1,41 @@
+.title {
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.dark_mode {
+    background-color: #172d3e00;
+    color: white;
+}
+
+.head_box{
+    padding:2px;
+}
+.heading{
+    margin-right: 5px;
+}
+.sub_type{
+    color: #8b969f !important;
+
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    background-color: #172d3e;
+}
+.header{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    padding: 5px;
+}
+
+.ti{
+    color:#8b969f;
+}
+.volume{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 5px;
+}

@@ -1,0 +1,14 @@
+.button_box {
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.button_box>div {
+    cursor: pointer;
+    padding: 5px;
+    color: #8b969f;
+}
+.active{
+ color: #fff !important;
+}
